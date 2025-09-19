@@ -1,0 +1,89 @@
+
+
+h3, p, ul, li {
+    background-color: bisque;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: midnightblue;
+    margin: 0.5em 0;
+}
+
+
+/*  <div id="nav_Vertical">  */ 
+.nav_Vertical {
+    width: 20%;
+}
+
+    ul {
+        list-style-type: none;                  
+        margin: 0;
+        padding: 0;
+        /* width: 150px; */                                 /*  Does nav_Vertical WIDTH address this?   */
+        background-color: #adc7e4;                          /*  Wny can't I put color name here?  */
+    }
+
+    li {                                                    /* li a:      Is A needed?   */
+        list-style-type: none;                 
+        display: block;
+        color: midnightblue;
+        padding: 8px 16px;
+        /* text-decoration: none;  */
+    }
+        /* Change NAV_menu color of text and background on hover */
+        li a:hover {
+        background-color: #adc7e4;
+        color: darkgreen;
+        }
+
+#SkillList {                                              /* Hash or period?   */
+        list-style-type: circle;
+        margin: 0;
+        padding: 0;
+    }
+
+#ValueList {                                              /* Hash or period?   */
+        list-style-type: circle;
+        margin: 0;
+        padding: 0;
+    }
+
+/* collapse borders on the table, then use only cell borders on one side. */
+table {
+  border: 1px solid gray;
+  border-collapse: collapse; /* removes dbl-lines OR border-collapse: separate; border-spacing: 20px 0; /* 20px horiz. gap, 0 vert. */
+}
+
+/* Use PADDING with   border-collapse: collapse;  */
+    td, th {
+        padding: 0 20px; /* horizontal spacing inside each cell */
+    }
+    
+
+#CelebrateContribute {                                  /* Hash or period?     */
+    color: darkgreen;
+}
+
+        .button {                                           /* Hash or period?     */
+        color: darkgreen;
+        }
+
+.bulbBrainstDiv {                                               /* align-items: center;         /* Centers vertically */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  width: 100px;
+  /* text-align: center; */                                     /* Would this center buttons around bulb image?  */ 
+}
+
+
+#visionBoards {
+    width: 100%;
+}
+
+#images{
+    width: 30%;
+    border: fit-content;                                      /*  ADD frame-like look with shadow, border, etc.? */
+    border: 2px solid #ccc;                                 /*  2px solid light gray border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);            /*  Offset-x, offset-y, blur-radius, color */
+}
+
+

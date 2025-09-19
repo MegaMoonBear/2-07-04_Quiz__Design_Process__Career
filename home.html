@@ -1,30 +1,83 @@
 <!-- 2-07-04_Quiz__Design_Process__Career  -->
 
 <!DOCTYPE html>
-<html>
-<!--                                                              Needs language, title, and maybe meta added                    --> 
-  
+  <html lang="en">
+  <link rel="stylesheet" href="styles_AllHTML_table.css">
+
+
 <head>
-
+  <meta charset="UTF-8">
+  <title>Career Path - Home</title>
 </head>
-<!--                                                              Needs language, title, and maybe meta added                    --> 
   
+
+  <!--               Navigation menu <div> for vertical       .nav {width 20%}             --> 
 <body>
+    <div id="nav_Vertical">
+        <ul>
+            <li src="home.html">Home</li>
+            <li src="Skills_Values.html">Skills_Values</li>
+            <li src="Analytics.html">Analytics</li>
+            <li src="Vision_Brd.html">Vision_Board</li>
+        </ul>
+    </div>
 
-  <h3>...TABLE..</h3>
-  
-  <table id="myTable" alt="Table as index to all pages, which can be accessed by the navigation links at the top of the page. (This table is an element with rows as Objects (to meet requirement).)">
-    <tr>
-      <td>cell 1</td>
-      <td>cell 2</td>
-    </tr>
-    <tr>
-      <td>cell 3</td>
-      <td>cell 4</td>
-    </tr>
-  </table>
-  <p>Table 1 (of 1). Scientific publications require captions, so I am following that standard, along with adding "alt" text.</p>
+    <div id="main_VerticalCtrRt">
+        <h3>Overview and Introduction</h3>
 
-</body>
-  
+        <p>Meghan is at another career turning point - one of many in her 30+ year-long career. </p> 
+        <p> She plans to try to apply, so she's hired weeks before graduation on March 12th, 2026. She hopes to start by April 1st, 2026 - about 3 weeks after graduation. </p>
+
+
+        <h3>Table of Contents</h3>
+
+        <p>Table 1 (of 1). Contents of this career selection exercise are listed. (Since some scientific publications, lab reports, and other reporting formats require captions, so I am following that standard, along with adding "alt" text.)</p>
+
+      <table id="tableContents" alt="Table to preview contents of all pages, which can be accessed by the navigation links at the top of the page. (This table is an element with rows as Objects (to meet requirement).)">
+        <tr>
+          <th>Page</th>                        <!--  TH to bold the row of labels for columns  -->
+          <th>  Description</th>               <!--  Spaces at start of 2nd column - BETTER?  -->   
+        </tr>
+        <tr>            
+          <td>Home</td>                                            <!--  TH for normal rows  -->
+          <td>  Contents, overview, and simple JS "animation".</td>
+        </tr>
+        <tr>            
+          <td>Values, Skills and Experiences</td>
+          <td>  List of her skills for new career path, and her values will guide to which organizations she'll apply.</td>
+        </tr>
+        <tr>            
+          <td>Analytics</td>
+          <td>  Quantification of skills for applications and for choosing a job and organization.</td>
+        </tr>
+        <tr>            
+          <td>Vision Board(s)</td>
+          <td>  Inspirational images, especially for roles or apps that she may develop.</td>
+        </tr>
+      </table>
+
+      <br>
+
+        <div id="CelebrateContribute"> 
+
+          <a href="https://www.linkedin.com/in/meghan-carr-144b369/">Meghan's LinkedIn - Overview of career, education, and interests</a>
+
+          <h3>Contribute career brainstorming ideas!</h3>
+            <!-- In this example from W3, JavaScript changes the value of the src (source) attribute of an image.  -->
+            <p>Celebrate with me by turning the light on. Take the next step and send me career suggestions in LinkedIn - see link above.</p>
+            
+            <div id="bulbBrainstDiv">
+                  <button id="bulbOn" src='pic_bulbon.gif'>Turn on light</button>
+              <img id="bulbBrainstorm" src="pic_bulboff.gif"> 
+                  <button id="bulbOff" src='pic_bulboff.gif'>Turn off light</button>
+            </div>
+
+        </div>
+
+        <script src="Web_behavior.js"></script>
+
+    </div>
+    
+  </body>
+
 </html>
