@@ -2,7 +2,6 @@
   <html lang="en">
   <link rel="stylesheet" href="styles_AllHTML_table.css">
 
-
 <head>
     <meta charset="UTF-8">
     <title>Career Path - Analytics</title>
@@ -18,20 +17,85 @@
         </ul>
     </div>
 
+    <div id="rankings">
+        <div id="rankTableRaw">
+        <p>Meghan developed this list by choosing one title to represent a job group. Then she ranked them by their descriptions. </p>
+        <table>
+            <tr>
+                <th> Rank (Top as 1)</th>                        <!--  TH to bold the row of labels for columns  -->
+                <th>  Primary Job from Group - Title </th>  
+                <th>  Primary Job from Group - Descriptions </th>      <!--  Spaces at start of 2nd column - BETTER?  -->   
+            </tr>
+            <tr>            
+                <td> 1 </td>
+                <td>  Conservation Technology Specialist </td>
+                <td>  Ideal intersection of biology background, tech skills, and mission-driven work </td>
+            </tr>
+            <tr>            
+                <td> 2 </td>
+                <td>  Junior Data Scientist </td>
+                <td>  Builds on coding and data skills while offering room for growth </td>
+            </tr>
+            <tr>            
+                <td> 3 </td>
+                <td>  Research Data Coordinator </td>
+                <td>  Connects biological knowledge with data organization and project workflows </td>
+            </tr>
+            <tr>            
+                <td> 4 </td>
+                <td>  AI/ML Data Annotator </td>
+                <td>  Entry point into AI while contributing to scientific or ecological model development </td>
+            </tr>
+            <tr>            
+                <td> 5 </td>
+                <td>  GIS Analyst </td>
+                <td>  Spatial data analysis for ecological or conservation projects </td>
+            </tr>
+            <tr>            
+                <td> 6 </td>
+                <td>  Project Coordinator (Digital Tools) </td>
+                <td>  Combines organization, tech tools, and support for mission-based projects </td>
+            </tr>
+        </table>
+        </div>
 
-    <img> 
+        <div id="rankFigure">
+            <p>After Meghan chose a representative title and ranked them she applied them to a 2-factor chart. <br> The chart ranks the job titles relative to Meghan's values and transferable skills. The chart's horizontal (x-axis) compares the job title to Meghan's values. The chart's vertical (y-axis) compares the job title to Meghan's transferable skills. The number of the job title from the prior table was entered at the <strong>intersection</strong> of the title's rating by horizontal values and vertical skills. </p>
 
-    <!-- JS objects and other actions and effects-->
-        <!-- <p id="demo1"></p> -->
-        <!-- <p id="demo2"></p> -->
+            <img src="assets/CareerSelect_ValuesXSkills.png"> 
 
+            <p><strong>Interpretation</strong> - The most applicable jobs to Meghan's values and skills are indicated by the yellow rectangle, which includes jobs 1 and 3 - Conservation Technology Specialist and Research Data Coordinator. </p>
+            
+        </div>
+    </div>      <!-- Closes div for rankings - data analytics  -->
 
-    <a href="https://www.linkedin.com/in/meghan-carr-144b369/">Meghan's LinkedIn - Career, education, and intereests overview</a> 
+    <div id="Summary">
+            <p><strong>Summary</strong> - After Meghan ranked representative titles, she plotted their intersectional and relative values in the chart. The results from the list and chart provided different perspectives on the job titles. These relative results gave her greater insight for next steps of her job search. </p> 
+
+            <p><strong>Next steps</strong> - Critical next steps involve moving from broad role categories to specific organizations, then opportunities and focused skill development for those roles. Actions may include: 
+                <ul>
+                    <li>Identify target organizations that align with conservation, research integrity, or tech-for-impact missions</li>
+                    <li>Search for organizations with open roles matching the top job titles </li>
+                    <li>Tailor resume and portfolio materials to highlight biology and other expertise and new coding/tech skills.</li>
+                    <li>Network with professionals in conservation technology and research data fields to uncover hidden opportunities. </li>
+                </ul>
+            </p>
+    </div>
+        <h3>Contribute career ideas!</h3>
+                <p>Send me career suggestions in <a href="https://www.linkedin.com/in/meghan-carr-144b369/">LinkedIn</a> message. Send an invite, if we aren't connected.</p>
+
+                <p>Or run this randomization of the 6 job titles and send me the answer. Tell me why it does or doesn't fit.</p>
+                <button onclick="randomTitle()">1 random Title</button>
+                <!-- window.alert("sometext");  -->
+                <!-- text3(); -->
+     
+        <img src="assets/Figurine_wings__Nature_PLUS.png"
+
 
 
 
     <script src="Web_behavior.js"></script>
-    
+
 </body>
 
 </html>

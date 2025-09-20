@@ -74,16 +74,17 @@ table {
   /* text-align: center; */                                     /* Would this center buttons around bulb image?  */ 
 }
 
-
 #visionBoards {
     width: 100%;
 }
 
-#images{
+img{
     width: 30%;
     border: fit-content;                                      /*  ADD frame-like look with shadow, border, etc.? */
     border: 2px solid #ccc;                                 /*  2px solid light gray border */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);            /*  Offset-x, offset-y, blur-radius, color */
+    display: flex; 
+    justify-content: center; /* Centers horizontally */
 }
 
 

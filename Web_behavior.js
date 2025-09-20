@@ -1,67 +1,46 @@
-// What is JavaScript?
-//     JavaScript is the programming language of the web, which can calculate, manipulate and validate data. It can also update and change both HTML and CSS.
-
-//     JavaScript is one of the 3 languages all web developers must learn, along with HTML for content and CSS for layout. JavaScript programs the behavior of web pages. 
-
-
-
-    //   JavaScript change value of HTML attribute - In this case from W3, JavaScript changes the value of the src (source) attribute of an image.</p>
 
 // div id="bulbBrainstDiv"
     // button id="bulbOff" src='pic_bulbon.gif   <img id="bulbBrainstorm" src="pic_bulboff.gif"> 
-        onclick:getElementById('bulbOn').src='pic_bulbon.gif'
+    
+    // Grab the image element
+    const bulb = window.getElementById("bulbBrainstorm");
 
-        onclick:getElementById('bulbOff').src='pic_bulboff.gif'
+    // Add event listeners to the buttons
+    document.getElementById("bulbOn").addEventListener("click", function() {
+        bulb.src = "pic_bulbon.gif";
+    });
 
-
-// List and display 
-            // HTML file addition, if used          <p id="demo1"></p>
-let carName = "Volvo";
-    document.getElementById("demo").innerHTML = carName;
+    document.getElementById("bulbOff").addEventListener("click", function() {
+        bulb.src = "pic_bulboff.gif";
+    });
 
 
 // RANDOMIZE array or list of careers
 
-    // let x = "Meghan's next career path should be ";
-    // let y = random__;
-    // let conCat = x + y;
-    // console.log(conCat)
+    // // Function to return a random item from an array
+    function randomTitle(jobTitles) {
+        // Use Math.random() to generate a random number between 0 and 1,
+        // multiply it by the length of the array, and use Math.floor() to round down to the nearest integer
+        return jobTitles[Math.floor(Math.random() * jobTitles.length)];             // RANDOM fr array - see 2 commented lines above
+        window.alert (text3);
+    }
 
-        let text1 = "Meghan's next career path should be ";
-        // let text2 = "Doe";                                       // RANDOMIZE selection from array or other list
-        let text3 = text1 + " " + text2;
-        console.log(text3)
+    // Declare and initialize an array of items
+    let jobTitles = ["Conservation Technology Specialist", "Junior Data Scientist", "Research Data Coordinator", "AI/ML Data Annotator", "GIS Analyst", "Technical Project Coordinator"];
+    
 
+    // Output the result of the random_item function with the array of items
+    console.log(randomTitle(jobTitles));
 
-    // alert(conCat);
-    // // window.alert (sum);
-
-
-            // let x = 5;
-            // let y = 6;
-            // let sum = x + y;
-
-            // alert(sum);
-            // // window.alert (sum);
-
-
-            
-// List and display 
-            // HTML file addition, if used          <p id="demo2"></p>
-
-// Constructor function for Person objects
-function Person(first, last, age, eye) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eye;
-}
-
-// Create two Person objects
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-
+    let text1 = "Meghan's next career path should be ";
+    // let text2 = "Doe";                                       
+    let text3 = text1 + " " + randomTitle();
+    console.log(text3)
+    return text3;
+    // alert(text3);
+    window.alert (text3);
 // Display age
-document.getElementById("demo").innerHTML =
-"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+document.getElementById("randomTitle").innerHTML =
+"Of 6 titles, here's a randomized one: " + randomTitle + "."; 
+
 
