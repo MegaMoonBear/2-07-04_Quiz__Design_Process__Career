@@ -38,7 +38,7 @@ document.getElementById("toggleBtn").addEventListener("click", function() {
 /* =======================================================
    Example 4: Update an Image Source
    HTML needed:
-   <img id="myImage" src="https://via.placeholder.com/150" alt="placeholder">
+   <img id="myImage" src="https://via.placeholder.com/150" alt="placeholder"> 
    <button id="imgBtn">Change Image</button>
    ======================================================= */
 document.getElementById("imgBtn").addEventListener("click", function() {
@@ -56,4 +56,5 @@ document.getElementById("alertBtn").addEventListener("click", function() {
   let name = document.getElementById("nameInput").value;
   alert("Hello, " + name + "!");
 });
+
 
